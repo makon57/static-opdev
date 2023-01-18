@@ -1,3 +1,7 @@
+domain: makon57.github.io       
+url: https://makon57.github.io 
+baseurl: /static-opdev/ 
+
 collections:
   pages:
     output: true
