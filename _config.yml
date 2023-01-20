@@ -1,0 +1,41 @@
+domain: makon57.github.io       
+url: https://makon57.github.io 
+baseurl: /static-opdev 
+
+collections:
+  pages:
+    output: true
+    permalink: /:name
+  tags:
+    output: true
+    permalink: /:name
+  categories:
+    output: true
+    permalink: /:name
+  posts:
+    output: true
+    permalink: /:collection/:name
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "standard-post"
+  - scope:
+      path: ""
+      type: "categories"
+    values:
+      layout: "categorypage"
+  - scope:
+      path: ""
+      type: "tags"
+    values:
+      layout: "tagpage"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+port: 4000
+host: 127.0.0.1
